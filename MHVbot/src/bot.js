@@ -133,44 +133,4 @@ client.on('message', (message) => {
     }
 } )
 
-client.on('message', (message) => {
-    if(message.author.bot) return;
-    console.log(message.content)
-    if (message.content === '!drive') {
-        message.reply('Here is the link to Google Drive: https://drive.google.com/drive/folders/1fc6lX0shQYXnCEe0ssKR9LbtlsYno39m')
-    }
-} )
-
-client.on('message', (message) => {
-    if(message.author.bot) return;
-    console.log(message.content)
-    if (message.content === '!time') {
-        message.reply('Here is the link to time table: https://docs.google.com/spreadsheets/d/1hd7wNzm5uL4NAMoMBJwvhIV7t1mcNGCpeBJDPqzTMOw/edit#gid=0')
-    }
-} )
-
-client.on('message', (message) => {
-    if(message.author.bot) return;
-    console.log(message.content)
-    if (message.content === '!github') {
-        message.reply('Here is the link to the Github repository: https://github.com/OriginalMHV/Gruppe3')
-    }
-} )
-
-client.on('message', (message) => {
-  if(message.author.bot) return;
-  console.log(message.content)
-  if (message.content === '!timeedit') {
-      message.reply('Here is the link to the schedule: https://cloud.timeedit.net/uia/web/tp/ri106v5y6566Z6QY85Q8QYgXZQ0360Y9727.html')
-  }
-} )
-
-client.on('message', (message) => {
-    if(message.author.bot) return;
-    console.log(message.content)
-    if (message.content === 'Who is the best?') {
-        message.reply('is the best')
-    }
-} )
-
 client.login(process.env.DISCORDJS_BOT_TOKEN)
